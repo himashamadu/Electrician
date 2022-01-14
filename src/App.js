@@ -7,12 +7,15 @@ import Payment_Details from "./Components/pages/Payment_Details";
 import Technical_Person from "./Components/pages/Technical_Person";
 import Search_Problem from "./Components/pages/Search_Problem";
 import Register from "./Components/pages/Register";
+import Chat from "./Components/Chat";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <>
+   
       <Router>
+      <Chat/>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home/>}  />
