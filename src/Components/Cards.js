@@ -1,11 +1,27 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Search from "../Search";
+
+
 
 function Cards() {
+
+  const elecProblems = [
+  "ABS SURGES",
+  "BDK STRIKES",
+  "HOUSE DAMGE",
+  "POWER LINES",
+  "MICROSOUND",
+  "FREQUENT ELECTRICAL SURGES",
+];
+
   return (
     <div className="cards" id="cardTest">
       <h1>Check out Common Electrical Problems</h1>
+      <br/>
+      <Search placeholder="Enter Problem" handleChange={e=>(e.target.value)}/>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
@@ -28,7 +44,7 @@ function Cards() {
           <ul className="cards__items">
             
             <p>
-            <h3>1. FREQUENT ELECTRICAL SURGES</h3>
+            <h3>1. ABS SURGES</h3>
             <br></br>
               Electrical surges can be caused by anything from lightning
               strikes, damage to power lines, faulty appliances and bad
@@ -46,7 +62,7 @@ function Cards() {
           <ul className="cards__items">
             
             <p>
-            <h3>1. FREQUENT ELECTRICAL SURGES</h3>
+            <h3>1. BDK STRIKES</h3>
             <br></br>
               Electrical surges can be caused by anything from lightning
               strikes, damage to power lines, faulty appliances and bad
@@ -64,7 +80,7 @@ function Cards() {
           <ul className="cards__items">
             
             <p>
-            <h3>1. FREQUENT ELECTRICAL SURGES</h3>
+            <h3>1. HOUSE DAMGE</h3>
             <br></br>
               Electrical surges can be caused by anything from lightning
               strikes, damage to power lines, faulty appliances and bad
@@ -82,7 +98,7 @@ function Cards() {
           <ul className="cards__items">
             
             <p>
-            <h3>1. FREQUENT ELECTRICAL SURGES</h3>
+            <h3>1. POWER LINES</h3>
             <br></br>
               Electrical surges can be caused by anything from lightning
               strikes, damage to power lines, faulty appliances and bad
@@ -100,7 +116,7 @@ function Cards() {
           <ul className="cards__items">
             
             <p>
-            <h3>1. FREQUENT ELECTRICAL SURGES</h3>
+            <h3>1. MICROSOUND</h3>
             <br></br>
               Electrical surges can be caused by anything from lightning
               strikes, damage to power lines, faulty appliances and bad

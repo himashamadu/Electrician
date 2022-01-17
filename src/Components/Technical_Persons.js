@@ -6,7 +6,7 @@ import "./Technical_Persons.css";
 function Technical_Persons() {
   return (
     <div className="Technical-container">
-    <img src="./Images/img-2.jpg" alt="Test" style={{position: "fixed",width: "100%"}}/>
+    <img src="./Images/img-2.jpg" alt="Test" style={{position: "fixed",width: "100%",zIndex:-1}}/>
             <h1>At Your Service</h1>
             <p>What are you waiting for?</p>
 

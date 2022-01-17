@@ -27,7 +27,7 @@ export default function Payment_Details() {
       <div class="container">
         <div class="row">
           <div class="col-12 mt-4"></div>
-          <div class="col-5">
+          <div class="col-12">
             <div class="card p-3">
               <div class="card-body border p-0">
                 <p>
